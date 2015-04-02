@@ -28,13 +28,18 @@ h1 {
 }
 /* Header & Nav */
 header {
+    display: flex;
     position: fixed;
     top: 0;
     left: 0;
-    height: 8%;
+    height: 5em;
     background-color: #ffffff;
     width: 100%;
     box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    align-items: center;
+    padding-top: 5em;
+    transition: height 0.3s linear 0.3s, padding 0.3s linear 0s;
+    overflow: hidden;
 }
 .nav-bar a {
     text-decoration: none;
@@ -58,6 +63,7 @@ header {
     font-size: 1.5em;
     padding: .5em;
     color: darkslategray;
+    transition: font-size .3s;
 
 }
 

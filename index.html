@@ -13,9 +13,9 @@
 </head>
 <body>
 <div class="wrapper">
-    <header class="nav-bar">
+    <header class="nav-bar" id="header">
         <div class="container flex-container" id="nav-nav-bar">
-            <div class="logo">Paris Vacations</div>
+            <div class="logo" id="logo">Paris Vacations</div>
             <a href="#">Home</a>
             <a href="#">About</a>
             <a href="#">Blog</a>
@@ -113,5 +113,24 @@
         </footer>
     </main>
 </div>
+<script>
+    var header, logo, yPos;
+    function yScroll() {
+        header = document.getElementById('header');
+        logo = document.getElementById('logo');
+        yPos = window.pageYOffset;
+        if(yPos > 150) {
+            header.style.height = "64px";
+            header.style.paddingTop = "0px";
+            logo.style.fontSize = "20px";
+
+        }else{
+            header.style.height="120px";
+            header.style.paddingTop = "50px";
+            logo.style.fontSize="35px";
+        }
+    }
+    window.addEventListener("scroll", yScroll);
+</script>
 </body>
 </html>
