@@ -141,11 +141,12 @@ section.module.parallax-1 {
 
 /* Articles */
 article {
-
+    text-align: justify;
+    text-justify: inter-word;
 }
 .container.blog-articles {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
 }
@@ -158,9 +159,12 @@ article {
     border: outset 1px lightgray;
 
 }
+.blog-articles {
+
+}
 .blog-articles article {
-    width: 45%;
-    margin-bottom: 2em;
+    width: 40%;
+    padding: 1em;
 
 }
 .blog-articles article h1 {
