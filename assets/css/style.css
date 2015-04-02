@@ -108,7 +108,6 @@ section.module h2 {
 }
 section.module p {
     margin-bottom: 40px;
-    font-size: 16px;
     font-weight: 300;
 }
 section.module p:last-child {
@@ -142,12 +141,36 @@ section.module.parallax-1 {
 
 /* Articles */
 article {
+
+}
+.container.blog-articles {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.featured-articles article {
     max-width: 200px;
     min-width: 200px;
     height: 300px;
     padding: 1em;
     margin: 1em;
-    border: groove 5px lightgray;
+    border: outset 1px lightgray;
+
+}
+.blog-articles article {
+    width: 45%;
+    margin-bottom: 2em;
+
+}
+.blog-articles article h1 {
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 28px;
+    margin-bottom: 1em;
+}
+.blog-articles article p {
+    font-family: "Roboto Slab", sans-serif;
+
 }
 
 #article-1 {
@@ -163,6 +186,7 @@ article {
     background: url("http://lorempixel.com/500/500/people") 50% 50% no-repeat;
 }
 
+/* Footer */
 
 
 /*Media Query*/
