@@ -63,7 +63,7 @@ header {
     font-size: 1.5em;
     padding: .5em;
     color: darkslategray;
-    transition: font-size .3s;
+    transition: font-size 0.3s;
 
 }
 
